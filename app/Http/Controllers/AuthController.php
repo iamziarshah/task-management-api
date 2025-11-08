@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UserRequest;
 use App\Services\AuthService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -16,15 +17,16 @@ class AuthController
      * Register a new user
      * POST /api/auth/register
      */
-    public function register(Request $request): JsonResponse
+    public function register(UserRequest $request): JsonResponse
     {
-        $validated = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:users,email',
-            'password' => 'required|string|min:8|confirmed',
-        ]);
+        // $validated = $request->validate([
+        //     'name' => 'required|string|max:255',
+        //     'email' => 'required|email|unique:users,email',
+        //     'password' => 'required|string|min:8|confirmed',
+        // ]);
 
-        $user = $this->authService->register($validated);
+        // dd($validated);
+        $user = $this->authService->register($request->all());
 
         if (!$user) {
             return response()->json([

@@ -722,25 +722,17 @@ This project is open source and available under the MIT License.
 
 ## 👨‍💼 Author
 
-**Mansoor**
-- Full Stack Engineer at Dice Analytics
-- 8+ years of Laravel experience
+**Syed Ziar Hussain Shah**
+- Full Stack Engineer LAMP/LEMP Developer @ CloudPOS
+- 9+ years of Laravel experience
 - Specialized in API design and system architecture
 
 ## 📞 Support
 
 For issues and questions, please open an issue on GitHub.
 
-## 🎓 Learning Resources
-
-- [Laravel Documentation](https://laravel.com/docs)
-- [JWT Authentication](https://jwt.io)
-- [RESTful API Design](https://restfulapi.net)
-- [Repository Pattern](https://medium.com/design-patterns/repository-pattern-bfb0f3f1e9e8)
-- [Database Query Optimization](https://en.wikipedia.org/wiki/Query_optimization)
-
 ---
 
-**Last Updated**: January 2024
-**Laravel Version**: 11.x
+**Last Updated**: November 2025
+**Laravel Version**: 12.x
 **PHP Version**: 8.3+
